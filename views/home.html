@@ -1,0 +1,22 @@
+<div>
+    <div ng-show="firebaseUser">
+    <p>Hello, {{ firebaseUser.email }}</p>
+        <button ng-click="SignOut()">Sign Out</button>
+    </div>
+    <br><br>
+    <h4>Criar Novo Usuario</h4>
+    Email: <input type="text" ng-model="email">
+    Password: <input type="text" ng-model="password">
+
+    <br><br>
+
+    <button ng-click="createUser()">Create User</button>
+
+    <br><br>
+
+    <button ng-click="deleteUser()">Delete User</button>
+    <br><br>
+
+    <p ng-if="message">Message: <strong>{{ message }}</strong></p>
+    <p ng-if="error">Error: <strong>{{ error }}</strong></p>
+</div>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="sampleApp" >
+<head>
+	<meta charset="UTF-8">
+
+
+	<title>AngularJS & Firebase Web App</title>
+
+	<link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="http://getbootstrap.com/examples/signin/signin.css" rel="stylesheet">
+</head>
+<body>
+
+		<div ng-view >
+		</div>
+	
+	<!-- AngularJS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+
+	<!-- Angular Ng-Route -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular-route.js"></script>
+
+	<!-- Firebase -->
+	<script src="https://www.gstatic.com/firebasejs/3.2.0/firebase.js"></script>
+
+	<!-- AngularFire -->
+	<script src="https://cdn.firebase.com/libs/angularfire/2.0.1/angularfire.min.js"></script>
+
+	<script>
+  // Initialize Firebase
+  var config = {
+  	apiKey: "AIzaSyATU5XuCI6Qe5les1P917Iwc9rqYisxMLw",
+  	authDomain: "fireblog-a3b12.firebaseapp.com",
+  	databaseURL: "https://fireblog-a3b12.firebaseio.com",
+  	storageBucket: "fireblog-a3b12.appspot.com",
+  };
+  firebase.initializeApp(config);
+</script>
+<script src="js/app.js"></script>
+<script src="js/controller.js"></script>
+<script src="js/route.js"></script>
+
+</body>
+</html>
